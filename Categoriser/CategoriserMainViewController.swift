@@ -48,8 +48,13 @@ class CategoriserMainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell")! as UITableViewCell
         
+        
         let question = wrongQuestions[indexPath.row]
-        cell.textLabel?.text = question.typeName!
+        if question.typeName != nil {
+            cell.textLabel?.text = question.typeName!
+        } else {
+
+        }
         
         return cell
     }

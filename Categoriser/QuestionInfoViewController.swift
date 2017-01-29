@@ -28,5 +28,35 @@ class QuestionInfoViewController: UIViewController {
         numberWrongLabel.text = String(numberGotWrong)
     }
     
+    @IBAction func addButtonClicked(_ sender: Any) {
+        if var labelValue = Int64(numberWrongLabel.text!) {
+            labelValue += 1
+            numberWrongLabel.text = String(labelValue)
+        }
+    }
     
+    
+    @IBAction func confirmButtonClicked(_ sender: Any) {
+        
+        var questions = [WrongQuestion]()
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do {
+            questions = try context.fetch(WrongQuestion.fetchRequest())
+        }
+            
+        catch {
+            print("Error saving or fetching data.")
+        }
+        
+//        if let q = questions.filter(<#T##isIncluded: (WrongQuestion) throws -> Bool##(WrongQuestion) throws -> Bool#>)
+        if let datQuestion = questions.filter({$0.typeName == questionSubjectTypeLabel.text}).first {
+            datQuestion.numberWrong = Int64(numberWrongLabel.text!)!
+        } else {
+
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
 }

@@ -171,16 +171,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7x-4i-Zbb">
+                                <rect key="frame" x="297" y="347" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonClicked:" destination="XaW-xV-G28" eventType="touchUpInside" id="zTV-1z-7JE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SC-jb-bX2">
+                                <rect key="frame" x="156.5" y="493" width="62" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirmButtonClicked:" destination="XaW-xV-G28" eventType="touchUpInside" id="kvr-Tc-xoG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1SC-jb-bX2" firstAttribute="centerX" secondItem="ebP-w7-o4W" secondAttribute="centerX" id="644-wf-9aj"/>
                             <constraint firstItem="J9i-ur-h0x" firstAttribute="top" secondItem="l13-ug-mRt" secondAttribute="bottom" constant="8" id="A8h-oP-VZe"/>
+                            <constraint firstItem="1SC-jb-bX2" firstAttribute="top" secondItem="J9i-ur-h0x" secondAttribute="bottom" constant="120" id="Be3-h0-VYp"/>
                             <constraint firstItem="l13-ug-mRt" firstAttribute="centerY" secondItem="ebP-w7-o4W" secondAttribute="centerY" id="E7k-2z-Qgb"/>
                             <constraint firstItem="ANj-Jf-P15" firstAttribute="leading" secondItem="l13-ug-mRt" secondAttribute="trailing" constant="10" id="LeS-tn-11l"/>
                             <constraint firstItem="l13-ug-mRt" firstAttribute="leading" secondItem="ebP-w7-o4W" secondAttribute="leadingMargin" constant="40" id="Vzz-P7-gr1"/>
                             <constraint firstItem="J9i-ur-h0x" firstAttribute="leading" secondItem="l13-ug-mRt" secondAttribute="leading" id="c0F-rZ-jFV"/>
                             <constraint firstItem="ANj-Jf-P15" firstAttribute="centerY" secondItem="l13-ug-mRt" secondAttribute="centerY" id="ehZ-Sd-8Rc"/>
                             <constraint firstItem="L7N-bD-0Pj" firstAttribute="leading" secondItem="J9i-ur-h0x" secondAttribute="trailing" constant="10" id="mY9-y9-NfJ"/>
+                            <constraint firstItem="A7x-4i-Zbb" firstAttribute="leading" secondItem="L7N-bD-0Pj" secondAttribute="trailing" constant="8" id="vHU-0G-JZO"/>
+                            <constraint firstItem="A7x-4i-Zbb" firstAttribute="centerY" secondItem="L7N-bD-0Pj" secondAttribute="centerY" id="vlQ-Jx-dIE"/>
                             <constraint firstItem="L7N-bD-0Pj" firstAttribute="centerY" secondItem="J9i-ur-h0x" secondAttribute="centerY" id="z3x-Ek-4Dv"/>
                         </constraints>
                     </view>
