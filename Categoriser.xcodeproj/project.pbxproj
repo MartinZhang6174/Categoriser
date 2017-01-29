@@ -13,6 +13,9 @@
 		9CF3BC551E3D80B6002492ED /* Categoriser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3BC531E3D80B6002492ED /* Categoriser.xcdatamodeld */; };
 		9CF3BC571E3D80B6002492ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF3BC561E3D80B6002492ED /* Assets.xcassets */; };
 		9CF3BC5A1E3D80B6002492ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF3BC581E3D80B6002492ED /* LaunchScreen.storyboard */; };
+		9CF3BC621E3D8E4F002492ED /* CategoriserMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3BC611E3D8E4F002492ED /* CategoriserMainViewController.swift */; };
+		9CF3BC641E3D8F22002492ED /* AddingNewQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3BC631E3D8F22002492ED /* AddingNewQuestionViewController.swift */; };
+		9CF3BC681E3D99D5002492ED /* QuestionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3BC671E3D99D5002492ED /* QuestionInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		9CF3BC561E3D80B6002492ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF3BC591E3D80B6002492ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CF3BC5B1E3D80B6002492ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CF3BC611E3D8E4F002492ED /* CategoriserMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriserMainViewController.swift; sourceTree = "<group>"; };
+		9CF3BC631E3D8F22002492ED /* AddingNewQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddingNewQuestionViewController.swift; sourceTree = "<group>"; };
+		9CF3BC671E3D99D5002492ED /* QuestionInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				9CF3BC4C1E3D80B6002492ED /* AppDelegate.swift */,
 				9CF3BC4E1E3D80B6002492ED /* ViewController.swift */,
 				9CF3BC501E3D80B6002492ED /* Main.storyboard */,
+				9CF3BC611E3D8E4F002492ED /* CategoriserMainViewController.swift */,
+				9CF3BC671E3D99D5002492ED /* QuestionInfoViewController.swift */,
+				9CF3BC631E3D8F22002492ED /* AddingNewQuestionViewController.swift */,
 				9CF3BC561E3D80B6002492ED /* Assets.xcassets */,
 				9CF3BC581E3D80B6002492ED /* LaunchScreen.storyboard */,
 				9CF3BC5B1E3D80B6002492ED /* Info.plist */,
@@ -140,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF3BC681E3D99D5002492ED /* QuestionInfoViewController.swift in Sources */,
 				9CF3BC551E3D80B6002492ED /* Categoriser.xcdatamodeld in Sources */,
 				9CF3BC4F1E3D80B6002492ED /* ViewController.swift in Sources */,
+				9CF3BC641E3D8F22002492ED /* AddingNewQuestionViewController.swift in Sources */,
+				9CF3BC621E3D8E4F002492ED /* CategoriserMainViewController.swift in Sources */,
 				9CF3BC4D1E3D80B6002492ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +316,7 @@
 				9CF3BC601E3D80B6002492ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
