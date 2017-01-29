@@ -51,7 +51,7 @@ class CategoriserMainViewController: UITableViewController {
         
         let question = wrongQuestions[indexPath.row]
         if question.typeName != nil {
-            cell.textLabel?.text = question.typeName!
+            cell.textLabel?.text = question.typeName! + "       " + String(question.numberWrong)
         } else {
 
         }
